@@ -1,0 +1,21 @@
+.spacer_adjust {
+  padding-top: 151px;
+}
+.spacer_adjust .heading h1 {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 73px;
+  position: relative;
+}
+.spacer_adjust .heading h1::after {
+  background-color: #e60012;
+  border-radius: 10px;
+  bottom: -23px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 8.2rem;
+}/*# sourceMappingURL=style_add_about.css.map */

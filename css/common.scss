@@ -1,0 +1,373 @@
+@import '_func';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 2px;
+}
+
+html,
+body {
+    font-size: 62.5%;
+}
+
+p,
+a,
+span,
+div,
+li {
+    font-size: 1.6rem;
+    color: #000;
+
+    @include mq('tab') {
+        font-size: 1.4rem;
+    }
+}
+
+picture {
+    display: initial;
+    margin: auto 0;
+    max-width: initial;
+}
+
+h3 {
+    font-size: 3.2rem;
+    letter-spacing: 3px;
+
+    @include mq('tab') {
+        font-size: 2.6rem;
+    }
+
+    @include mq('sp') {
+        font-size: 2.6rem;
+        // font-size: 2.0rem;
+    }
+}
+
+h4 {
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+
+    @include mq('sp') {
+        font-size: 2.6rem;
+    }
+}
+
+.container-xl {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container-l {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @include mq('tab') {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.container-m {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @include mq('tab') {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.cmn {
+    &-button {
+        display: inline-block;
+        position: relative;
+        transition: all 0.5s;
+
+        &__white {
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        &__black {
+            border: 1px solid #000;
+        }
+
+        &__blue {
+            background-color: $main-color;
+            border: 1px solid $main-color;
+        }
+
+        &__link {
+            font-size: 1.5rem;
+
+            &::after {
+                content: "";
+                position: absolute;
+                z-index: 4;
+                top: 24px;
+                right: 12px;
+                display: inline-block;
+                width: 30px;
+                height: 4px;
+                transform: skew(74deg);
+            }
+
+            &-l {
+                width: 260px;
+                height: 55px;
+                display: inline-block;
+                line-height: 55px;
+                text-align: center;
+            }
+
+            &-m {
+                width: 230px;
+                height: 55px;
+                display: inline-block;
+                line-height: 55px;
+                text-align: center;
+            }
+
+            &-white {
+                color: $text-color02;
+
+                &::after {
+                    border-right: 3px solid #fff;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+
+            &-black {
+                color: $text-color01;
+
+                &::after {
+                    border-right: 3px solid #000;
+                    border-bottom: 1px solid #000;
+                }
+            }
+        }
+
+        &__mvposi {
+            position: absolute;
+            top: 65%;
+            right: 478px;
+
+            @include mq('tab') {
+                top: 71%;
+                right: inherit;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            @include mq('tab') {
+                top: 80%;
+                right: inherit;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &__txt {
+            position: relative;
+            z-index: 3;
+            color: inherit;
+            transition: all 0.5s;
+        }
+
+        &__slide {
+            position: relative;
+
+            &-white {
+                &::before {
+                    background-color: #fff;
+                }
+
+                &:hover {
+                    color: $text-color01;
+
+                    &::after {
+                        border-color: $text-color01;
+                    }
+                }
+            }
+
+            &-blue {
+                &::before {
+                    background-color: $main-color;
+                }
+
+                &:hover {
+                    color: $text-color02;
+
+                    &::after {
+                        border-color: $text-color02;
+                    }
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                // z-index: -1;
+                z-index: 2;
+                display: block;
+                width: 100%;
+                height: 100%;
+                transform-origin: right center;
+                backface-visibility: hidden;
+                transform: scale(0, 1);
+                transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.05, 1);
+            }
+
+            &:hover {
+                &::before {
+                    transform-origin: left center;
+                    transform: scale(1, 1);
+                }
+            }
+        }
+    }
+
+    &-link {
+        &__border {
+            background-image: linear-gradient(#000, #000);
+            background-position: 100% 100%;
+            background-repeat: no-repeat;
+            background-size: 0 1px;
+            display: inline;
+            transition: background-size .5s cubic-bezier(.43, .05, .17, 1) 0s;
+
+            &:hover {
+                background-position: 0 100%;
+                background-size: 100% 1px;
+            }
+
+            &-white {
+                background-image: linear-gradient(#fff, #fff);
+            }
+        }
+    }
+
+    &-eyecatch {
+        &__inner {
+            display: inline-block;
+            margin-bottom: 130px;
+
+            @include mq('tab') {
+                margin-bottom: 50px;
+            }
+        }
+
+        &__ttl {
+            font-size: 6.0rem;
+            margin-bottom: 13px;
+            color: $main-color;
+            letter-spacing: 4px;
+            // letter-spacing: 8px;
+
+            @include mq('tab') {
+                font-size: 4.8rem;
+            }
+
+            @include mq('sp') {
+                font-size: 3.2rem;
+                margin-bottom: 0;
+            }
+        }
+
+        &__txt {
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-align: right;
+            margin-right: 9px;
+
+            @include mq('tab') {
+                font-size: 1.6rem;
+            }
+
+            @include mq('sp') {
+                font-size: 1.0rem;
+                letter-spacing: 1px;
+            }
+
+            br {
+                display: none;
+
+                @include mq('sp') {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.is-exp {
+    overflow: hidden;
+
+    &__img {
+        transition: 1s all;
+
+        @include mq('sp') {
+            max-width: 140px;
+        }
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+            transition: 1s all;
+        }
+    }
+}
+
+.contact {
+    background-color: #28294F;
+
+    &-content {
+        padding-top: 65px;
+        padding-bottom: 55px;
+        text-align: center;
+
+        &__ttl {
+            color: #ffffff;
+        }
+
+        &__txt {
+            margin-top: 25px;
+            margin-bottom: 55px;
+            color: #ffffff;
+        }
+    }
+}
+
+// **********************************
+// アニメーション
+// **********************************
+
+// コンテンツをふわっっと表示させる
+._fu {
+    opacity: 0;
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

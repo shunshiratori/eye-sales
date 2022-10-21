@@ -1,0 +1,49 @@
+@media (max-width: 780px) {
+  main .speakers_wrap {
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+  main .speakers_wrap .image_wrap {
+    margin: auto;
+  }
+  main .text_wrap {
+    margin-top: 20px;
+  }
+  main .timetable thead tr td span {
+    line-height: 1.4;
+  }
+  main .timetable tbody td, main .timetable tbody th {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  main .timetable tbody tr + tr td {
+    border-top: 0;
+  }
+  main .timetable tbody tr + tr th {
+    border-top: 7px #fff solid;
+  }
+  main .timetable tbody th {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  main .details_wrap {
+    padding: 10px;
+  }
+  main .details_wrap dl {
+    flex-direction: column;
+    border-top: solid 1px #aaa;
+  }
+  main .details_wrap dt,
+main .details_wrap dd {
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  main .details_wrap dt {
+    display: block;
+    width: 100%;
+    background: #f9f9f9;
+  }
+}/*# sourceMappingURL=sp_seminar_single.css.map */

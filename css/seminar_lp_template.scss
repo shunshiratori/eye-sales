@@ -1,0 +1,722 @@
+@charset "utf-8";
+
+// events-single
+header {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+/*#wpadminbar {display: none;}*/
+/*初期・全体*/
+body {
+    background-color: #f9f9f9;
+}
+
+.events-single {
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 0;
+
+    * {
+        box-sizing: border-box;
+        // font-family: 'Noto Sans JP';
+    }
+
+    .wrap {
+        max-width: unset;
+
+        p {
+            line-height: unset;
+        }
+    }
+}
+
+.seminar_lp_template {
+    font-size: 18px;
+    line-height: 1.6;
+
+    .heading_title,
+    .recommend_heading_title {
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 auto 1em;
+    }
+
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+li {
+    text-align: justify;
+}
+
+ul {
+    margin: 0;
+}
+
+.display-grid {
+    display: grid;
+}
+
+// .pc {display: initial;}
+.t_red {
+    color: red;
+}
+
+._wrapper .wrap {
+    max-width: calc(960px);
+    padding: 0;
+}
+
+._wrapper {
+    background-color: #fff;
+}
+
+@media screen and (min-width: 961px) {
+    .float_l {
+        float: left;
+    }
+
+    .float_r {
+        float: right;
+    }
+
+    .display-flow_root {
+        display: flow-root;
+    }
+}
+
+.eyecatch_image {
+    margin: 0;
+    margin: 0 auto 50px;
+}
+
+// .eyecatch_image{background: linear-gradient(180deg, rgba(246,147,31,0.5), rgba(241,104,32,0.5));}
+.eyecatch_image img {
+    vertical-align: middle;
+    width: 960px;
+    width: 100%;
+    max-width: 100%;
+}
+
+// .heading_title {
+// font-size: 1.75em;
+// text-align: center;
+// margin: 0 auto 1em;
+// }
+.text_pickup {
+    color: red;
+    font-weight: bold;
+}
+
+/*ヘッダー*/
+.section_header {
+    background-color: #743418;
+    color: #fff;
+    text-align: center;
+}
+
+.section_header p {
+    padding: 6px 0;
+    // font-size: 18px;
+    letter-spacing: 0.04em;
+}
+
+
+/*概要*/
+.section_01 {
+    padding: 0 0 60px;
+
+    .text p {
+        // line-height: 1.6;
+        // font-size: 15px;
+    }
+
+    .text p+p {
+        margin-top: 1em;
+    }
+}
+
+.recommend {
+    background-color: #fff;
+    padding: 15px 30px 0 30px;
+    margin: 30px auto 0;
+    max-width: calc(960px);
+
+    /*.recommend_heading_title {text-align: center;font-weight: 600;border-bottom: solid 1px #000;padding: 0 0 11px;margin-bottom: 16px;font-size: 28px;}*/
+    .recommend_heading_title {
+        text-align: center;
+        border-bottom: solid 1px #555;
+        padding: 0 0 16px;
+    }
+
+    ul {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: fit-content;
+
+        li {
+            // font-size: 16px;
+            margin-bottom: 5px;
+            // text-align: left;
+            position: relative;
+            padding-left: 1.5em;
+            // margin-left: -2.2em;
+        }
+
+        li::before {
+            background-image: url(https://mk8-robo.com/wp-content/uploads/2020/05/check_red.svg);
+            width: 1em;
+            content: "";
+            height: 1em;
+            display: block;
+            background-repeat: no-repeat;
+            position: absolute;
+            background-position: center;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+// recommend
+
+
+/*プログラム*/
+.section_02 {
+    // padding: 56px 0 56px;
+    padding: 60px 0 70px;
+}
+
+// telework_conference_timetable
+
+.events_info_box.program h4 {
+    margin: 20px 0 10px;
+    padding: 0;
+}
+
+main {
+    tr+tr th {
+        border-top: #fff 1px solid;
+        color: #fff;
+    }
+
+    tr+tr td {
+        border-top: #b3b3b3 1px dashed;
+    }
+}
+
+.timetable_logo_image {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.section_03 {
+    padding: 50px 0 66px;
+
+    .display-grid {
+        // gap: 40px;
+        // grid-template-columns: repeat(2,1fr);
+        // margin-top: 34px;
+        gap: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 34px;
+        max-width: 460px;
+    }
+
+    li {
+        background-color: #fff;
+        // padding: 20px 20px;
+        // text-align: center;
+        padding: 1.5em 1.5em 2em;
+    }
+
+    /*li img {
+    margin-bottom: 12px;
+    }*/
+    li .corp {
+        // font-size: 17px;
+        // line-height: 1.4;
+        margin-bottom: 0.2em;
+    }
+
+    li .name {
+        font-size: 1.5em;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+        margin-bottom: 17px;
+        /*margin-top: 10px;
+        */
+    }
+
+    li .profile {
+        border-top: solid 1px #aaa;
+        // font-size: 15px;
+        // line-height: 1.7;
+        padding-top: 18px;
+        text-align: justify;
+    }
+
+    li .performance .d-grid {
+        grid-template-columns: repeat(6, 1fr);
+        font-size: 60%;
+        text-align: center;
+        align-items: end;
+        gap: 1em;
+    }
+
+    li .performance .d-grid img {
+        margin: 0 0 0.5em;
+    }
+
+    li .profile_image {
+        flex-shrink: 1;
+        max-width: 200px;
+    }
+
+    @media screen and (min-width: 961px) {
+
+        li img {
+            width: 200px;
+            /*margin-right: 1.5em;
+        */
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+
+        li {
+            text-align: center;
+        }
+
+        li .performance .d-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 680px) {
+
+        li .float_l img {
+            max-width: 200px;
+        }
+
+        li .performance .d-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+// section_03
+
+
+/*お申し込みフォーム*/
+.section_04 {
+    padding: 52px 0 58px;
+    /*padding: 52px 0 0;*/
+}
+
+.section_04 .heading_title {
+    margin-bottom: 46px;
+}
+
+.section_04 .text {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*markerobo form style*/
+.section_04 .markerobo-form-wrapper {
+    margin: 0 auto;
+    max-width: 700px;
+    // padding-left: 36px;
+}
+
+.section_04 .markerobo-form-label,
+.markerobo-form-row.markerobo-form-freetext .markerobo-form-label {
+    display: inline-block;
+    font-size: 14px;
+    // width: 180px;
+}
+
+
+.section_04 .markerobo-form-wrapper {
+    margin: 0 auto;
+    /*max-width: unset;
+    */
+}
+
+.section_04 .markerobo-form-wrapper .markerobo-form-row.markerobo-form-radiogrp {
+    margin: 30px 0;
+}
+
+.section_04 .markerobo-form-wrapper .markerobo-form-row.markerobo-form-radiogrp .markerobo-form-label {
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: -180px;
+}
+
+.markerobo-form-row.markerobo-form-text,
+.markerobo-form-row.markerobo-form-input,
+.markerobo-form-row.markerobo-form-email,
+.markerobo-form-row.markerobo-form-tel,
+.markerobo-form-row.markerobo-form-select {
+    align-items: center;
+    // display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+html[lang="ja"] .markerobo-form-wrapper select {
+    height: unset;
+}
+
+.section_04 .markerobo-form-wrapper form {
+    width: calc(100% - 180px);
+    margin-left: auto;
+}
+
+.section_04 .markerobo-form-wrapper {
+    position: relative;
+}
+
+.section_04 .markerobo-form-label,
+.markerobo-form-row.markerobo-form-freetext .markerobo-form-label {
+    position: absolute;
+    left: 0;
+}
+
+.markerobo-form-row.markerobo-form-radiogrp .markerobo-form-label {
+    position: absolute;
+    left: 0;
+}
+
+.markerobo-form-row.markerobo-form-radiogrp {
+    /* position: relative;
+     */
+}
+
+@media screen and (max-width: 480px) {
+
+    .form_name {
+        margin-top: 21px;
+        margin-bottom: 0;
+    }
+}
+
+/*主催企業*/
+/*.section_05 {margin-bottom: 80px;}*/
+.section_05 .heading_title {
+    margin-bottom: 34px;
+}
+
+.section_05 .display-grid {
+    gap: 30px 28px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 44px;
+    margin-top: 22px;
+}
+
+._wrapper .section_05 h2 {
+    border-bottom: none;
+    // font-size: 16px;
+    margin-bottom: 12px;
+    padding: 45px 0 0;
+}
+
+// .section_05 .link_list {
+// line-height: 1.7;
+// }
+.section_05 a {
+    color: #ff6868;
+    font-size: 0.9em;
+}
+
+.section_05 a:hover {
+    text-decoration: underline;
+}
+
+
+/*フッター*/
+.section_footer {
+    background-color: #743418;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.section_footer p {
+    font-size: 13px;
+}
+
+@media screen and (min-width: 961px) {
+    .section_01 .text p img {
+        max-width: 700px;
+    }
+
+    // .recommend {max-width: 640px;width: 100%;}
+    .recommend {
+        // max-width: 800px;
+        width: 100%;
+    }
+
+    .recommend ul li {
+        transform: translateX(1.2em);
+    }
+}
+
+/*レスポンシブ*/
+@media screen and (max-width: 960px) {
+    ._wrapper .wrap {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    html[lang="ja"] .section_04 .markerobo-form-wrapper input[type="text"],
+    html[lang="ja"] .section_04 .markerobo-form-wrapper input[type="email"],
+    html[lang="ja"] .section_04 .markerobo-form-wrapper input[type="tel"],
+    html[lang="ja"] .section_04 .markerobo-form-wrapper select,
+    html[lang="ja"] .section_04 .markerobo-form-wrapper textarea {
+        display: inline-block;
+        padding: 0.34em 0.7em;
+        border: solid 1.5px #000;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    span.bgw {
+        line-height: 1;
+        width: 3em;
+        text-align: center;
+        display: inline-block;
+        padding: 2px 5px;
+    }
+
+    .section_03 .display-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section_05 .display-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .eyecatch_image {
+        margin-top: 0;
+    }
+
+    // ._wrapper .heading_title {font-size: 24px;}
+
+    .telework_conference_timetable thead td .d-flex {
+        flex-direction: column;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .telework_conference_timetable tbody th,
+    .telework_conference_timetable tbody td {
+        display: block;
+    }
+
+    .telework_conference_timetable tbody th {
+        text-align: left;
+        width: calc(100% - 20px);
+    }
+
+    .telework_conference_timetable tbody td {
+        width: calc(100% - 20px);
+    }
+
+    .telework_conference_timetable tbody td {
+        padding: 12px 10px 12px;
+    }
+
+    .telework_conference_timetable thead td {
+        font-size: 14px;
+    }
+
+    .telework_conference_timetable thead td strong {
+        font-size: 18px;
+    }
+
+    tr+tr td {
+        border-top: none;
+    }
+
+    .timetable_logo_image {
+        gap: 5px;
+    }
+
+    .section_04 .wrap {
+        padding: 0 30px;
+    }
+
+    .section_04 .markerobo-form-wrapper .markerobo-form-row.markerobo-form-radiogrp .markerobo-form-label {
+        margin-left: 0;
+    }
+
+    .markerobo-form-row.markerobo-form-text,
+    .markerobo-form-row.markerobo-form-input,
+    .markerobo-form-row.markerobo-form-email,
+    .markerobo-form-row.markerobo-form-tel,
+    .markerobo-form-row.markerobo-form-select {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .markerobo-form-label {
+        margin-right: auto;
+    }
+
+    html[lang="ja"] .section_04 .markerobo-form-wrapper input[type="text"],
+    html[lang="ja"] .section_04 .markerobo-form-wrapper input[type="email"],
+    html[lang="ja"] .section_04 .markerobo-form-wrapper input[type="tel"],
+    html[lang="ja"] .section_04 .markerobo-form-wrapper select,
+    html[lang="ja"] .section_04 .markerobo-form-wrapper textarea {
+        width: 100%;
+    }
+
+    .section_04 .markerobo-form-wrapper form {
+        width: 100%;
+        margin: auto;
+    }
+
+    .section_04 .markerobo-form-label,
+    .markerobo-form-row.markerobo-form-freetext .markerobo-form-label {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .markerobo-form-row.markerobo-form-freetext {
+        display: block;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .section_04 .markerobo-form-wrapper {
+        margin: 0 auto;
+        /*max-width: unset;*/
+    }
+}
+
+html[lang="ja"] {
+    margin-top: 0 !important;
+}
+
+.privacy_info {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 1em;
+}
+
+.section_03 .profile_field.d-flex {
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width: 680px) {
+    .section_03 .profile_field.d-flex {
+        flex-direction: column;
+    }
+
+    .section_03 .profile_field.d-flex {
+        margin-bottom: 1em;
+    }
+}
+
+.documents_title {
+    align-items: center;
+    color: #262626;
+    display: flex;
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 0 auto 1.15em;
+    text-align: center;
+    width: 100%;
+}
+
+.documents_title:before,
+.documents_title:after {
+    border-top: 1px solid #979797;
+    content: "";
+    flex-grow: 1;
+}
+
+.documents_title:before {
+    margin-right: 0.5em;
+}
+
+.documents_title:after {
+    margin-left: 0.5em;
+}
+
+
+.single.has-sidebar ._wrapper .section_05 h3 {
+    font-size: 1em;
+    margin-bottom: 12px;
+    padding: 0em 0 0;
+}
+
+.section_03 .profile_field.d-flex {
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width: 680px) {
+    .section_03 .profile_field.d-flex {
+        flex-direction: column;
+    }
+
+    .section_03 .profile_field.d-flex {
+        margin-bottom: 1em;
+    }
+}
+
+.documents_title {
+    align-items: center;
+    color: #262626;
+    display: flex;
+    font-weight: bold;
+    margin: 0 auto 1.15em;
+    text-align: center;
+    width: 100%;
+}
+
+.documents_title:before,
+.documents_title:after {
+    border-top: 1px solid #979797;
+    content: "";
+    flex-grow: 1;
+}
+
+.documents_title:before {
+    margin-right: 0.5em;
+}
+
+.documents_title:after {
+    margin-left: 0.5em;
+}
+
+.form_link_wrapper {
+    padding: 50px 0;
+}

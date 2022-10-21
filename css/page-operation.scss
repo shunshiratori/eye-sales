@@ -1,0 +1,526 @@
+@import '_func';
+
+.operation {
+
+    p,
+    a,
+    span,
+    ul,
+    li,
+    div {
+        @include mq('sp') {
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (min-width:769px) {
+        .pc {
+            display: block;
+        }
+    }
+
+    @media (max-width:768px) {
+        .sp {
+            display: block;
+        }
+    }
+
+    br {
+        display: none;
+
+        @include mq('sp') {
+            display: block;
+        }
+
+        &.def_br {
+            display: block;
+        }
+    }
+
+    padding-top: calc(140px + 90px);
+
+    @include mq('tab') {
+        padding-top: calc(90px + 90px);
+    }
+
+    @include mq('sp') {
+        padding-top: calc(50px + 90px);
+    }
+
+    .opblock {
+        margin-bottom: 140px;
+
+        @include mq('tab') {
+            margin-bottom: 100px;
+        }
+
+        @include mq('sp') {
+            margin-bottom: 70px;
+        }
+
+        &.core {
+            margin-bottom: 70px;
+        }
+
+        &-inner {
+            padding-left: 100px;
+            padding-right: 100px;
+
+            @include mq('tab') {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        &-split {
+            display: flex;
+
+            @include mq('tab') {
+                display: block;
+            }
+        }
+
+        &-left {
+            width: 55%;
+
+            @include mq('tab') {
+                width: 100%;
+            }
+        }
+
+        &-right {
+            width: 45%;
+            margin-top: auto;
+            margin-bottom: auto;
+
+            @include mq('tab') {
+                width: 100%;
+            }
+        }
+
+        &-ttl {
+            position: relative;
+            left: -100px;
+            width: calc(100% + 100px);
+            margin-bottom: 45px;
+
+            @include mq('tab') {
+                position: inherit;
+                left: inherit;
+                width: inherit;
+            }
+        }
+
+        &-txt {
+            margin-bottom: 40px;
+            line-height: 1.8;
+
+            &__emp {
+                font-weight: 600;
+            }
+
+            &__blc {
+                background-color: $gray;
+            }
+
+            &__line {
+                border-bottom: 1px solid #000;
+            }
+        }
+
+        &-img {
+            margin-right: 25px;
+            margin-left: auto;
+
+            @include mq('tab') {
+                margin-right: auto !important;
+            }
+
+            &__m {
+                max-width: 365px;
+
+                @include mq('tab') {
+                    max-width: 500px;
+                    width: 100%;
+                }
+
+                @include mq('sp') {
+                    width: 90%;
+                }
+            }
+
+            &__l {
+                max-width: 400px;
+
+                @include mq('tab') {
+                    max-width: 500px;
+                    width: 100%;
+                }
+
+                @include mq('sp') {
+                    width: 90%;
+                }
+            }
+
+            &__xl {
+                max-width: 437px;
+                margin-right: 0;
+
+                @include mq('tab') {
+                    max-width: 500px;
+                    width: 100%;
+                }
+
+                @include mq('sp') {
+                    width: 90%;
+                }
+            }
+        }
+
+        &-wrap {
+            text-align: center;
+            width: 100%;
+            padding-top: 20px;
+
+            .cmn-button {
+                &__link-l {
+                    // width: 350px;
+                }
+            }
+
+            .why-cmn-btn {
+                width: 320px;
+            }
+
+            .operation-cmn-btn {
+                width: 280px;
+            }
+        }
+
+        &-dx {
+            padding-top: 22px;
+            padding-bottom: 60px;
+
+            &__img {
+                display: block;
+                width: 100%;
+
+                @include mq('tab') {
+                    display: none;
+                }
+
+                &-sp {
+                    display: none;
+                    max-width: 600px;
+                    width: 100%;
+                    margin: 0 auto;
+
+                    @include mq('tab') {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &-separate {
+            display: flex;
+            padding-top: 25px;
+            margin-bottom: 75px;
+
+            @include mq('tab') {
+                display: block;
+            }
+
+            &__border {
+                border: 1px solid #000;
+            }
+
+            &__left {
+                margin-right: 7.5px;
+                width: 50%;
+                max-width: 493px;
+                padding-left: 25px;
+                padding-right: 25px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                position: relative;
+
+                @include mq('tab') {
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            &__right {
+                margin-left: 7.5px;
+                width: 50%;
+                max-width: 493px;
+                padding-left: 25px;
+                padding-right: 25px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                position: relative;
+
+                @include mq('tab') {
+                    width: 100%;
+                    margin-right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            &__img {
+                max-width: 300px;
+                width: 100%;
+                margin: 0 auto;
+
+                &-left {
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+
+                    @include mq('sp') {
+                        width: 80%;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                &-right {
+                    margin-top: 100px;
+                    margin-bottom: 95px;
+
+                    @include mq('sp') {
+                        width: 80%;
+                        margin-bottom: 75px;
+                    }
+                }
+            }
+
+            &__ttl {
+                font-size: 2.1rem;
+                font-weight: 600;
+                margin-bottom: 40px;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include mq('sp') {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &__list {
+                margin-bottom: 40px;
+                display: table;
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+                list-style: none;
+                padding: 0;
+                padding-left: 3%;
+            }
+
+            &__item {
+                position: relative;
+                font-size: 1.4rem;
+                letter-spacing: 0;
+                line-height: 2;
+
+                @include mq('sp') {
+                    font-size: 1.2rem;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "・";
+                    top: 0;
+                    left: -20px;
+                    display: block;
+                }
+            }
+
+            &__box {
+                max-width: 440px;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 20px 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 35px;
+
+                @include mq('sp') {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                &-bkb {
+                    background-color: $gray;
+                }
+
+                &-bor {
+                    border: 1px solid $gray;
+                }
+            }
+
+            &__txt {
+                font-size: 1.4rem;
+                margin-bottom: 16px;
+                letter-spacing: 0;
+
+                @include mq('sp') {
+                    font-size: 1.2rem;
+                    margin-bottom: 8px;
+                }
+
+                &-l {
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    letter-spacing: 0;
+                }
+            }
+        }
+
+        &-block {
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-left: 0;
+                padding-top: 20px;
+                padding-bottom: 25px;
+            }
+
+            &__item {
+                width: 31%;
+                max-width: 309px;
+                height: 83px;
+                display: table;
+                background-color: $gray;
+                margin-right: 3.4%;
+                margin-bottom: 33px;
+                text-align: center;
+
+                &:nth-of-type(3n) {
+                    margin-right: 0;
+                }
+
+                @include mq('tab') {
+                    width: 48.3%;
+
+                    &:nth-of-type(3n) {
+                        margin-right: 3.4%;
+                    }
+
+                    &:nth-of-type(2n) {
+                        margin-right: 0;
+                    }
+                }
+
+                @include mq('sp') {
+                    margin-bottom: 20px;
+                    width: 48%;
+
+                    &:nth-of-type(3n) {
+                        margin-right: 4%;
+                    }
+
+                    &:nth-of-type(2n) {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            &__txt {
+                display: table-cell;
+                vertical-align: middle;
+                letter-spacing: 1px;
+                font-weight: 500;
+
+                @include mq('sp') {
+                    font-size: 1.1rem;
+                    letter-spacing: 0;
+                }
+            }
+        }
+
+        &-exp {
+            margin-top: 53px;
+            background-color: $gray;
+            padding: 29px 37px;
+            margin-bottom: 43px;
+
+            &__top {
+                padding-bottom: 20px;
+            }
+
+            &__bottom {
+                padding-top: 20px;
+            }
+
+            &__border {
+                border-bottom: 1px solid #fff;
+            }
+
+            &__ttl {
+                font-size: 2.4rem;
+                margin-bottom: 16px;
+            }
+        }
+
+        .cmn-button__link-xl {
+            @include mq('sp') {
+                width: 270px;
+            }
+        }
+
+        .cmn-button__link-ll {
+            @include mq('sp') {
+                width: 270px;
+            }
+        }
+
+        .cmn-button__txt {
+            letter-spacing: 0;
+            font-size: 1.5rem;
+
+            @include mq('sp') {
+                font-size: 1.3rem;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .contact {
+        background-color: $main-color;
+
+        &-content {
+            padding-top: 65px;
+            padding-bottom: 55px;
+            text-align: center;
+
+            &__ttl {
+                color: $text-color02;
+            }
+
+            &__txt {
+                margin-top: 25px;
+                margin-bottom: 55px;
+                color: $text-color02;
+
+                @include mq('sp') {
+                    width: 95%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    text-align-last: justify;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}

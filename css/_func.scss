@@ -1,0 +1,19 @@
+// カラー
+$base-color: #EDEDF0;
+$main-color: #28294F;
+$text-color01: #000000;
+$text-color02: #ffffff;
+$gray: #ededf0;
+
+// レスポンシブ時のコンテンツ幅設定
+$breakpoints: (
+  'sp': "(max-width: 475px)",
+  'tab': "(max-width: 980px)",
+  'big': "(min-width: 1920px)"
+) !default;
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

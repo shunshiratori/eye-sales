@@ -1,0 +1,158 @@
+.company-history {
+  padding-top: 230px;
+}
+@media (max-width: 980px) {
+  .company-history {
+    padding-top: 180px;
+  }
+}
+@media (max-width: 475px) {
+  .company-history {
+    padding-top: 140px;
+  }
+}
+.company-history-content {
+  margin-top: 65px;
+  margin-bottom: 120px;
+}
+@media (max-width: 980px) {
+  .company-history-content {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 475px) {
+  .company-history-content {
+    margin-top: 30px;
+  }
+}
+.company-history-content__table {
+  width: 100%;
+  border-top: 1px solid #ededf0;
+}
+.company-history-content__tbody {
+  width: 100%;
+}
+.company-history-content__th {
+  width: 15%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #ededf0;
+}
+@media (max-width: 980px) {
+  .company-history-content__th {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.8rem;
+  }
+}
+.company-history-content__td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ededf0;
+  vertical-align: top;
+}
+@media (max-width: 980px) {
+  .company-history-content__td {
+    display: inline-block;
+  }
+}
+.company-history-content__td-inner {
+  display: flex;
+}
+.company-history-content__link {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.company-history-content__txt {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  display: block;
+}
+@media (max-width: 980px) {
+  .company-history-content__txt {
+    padding-left: 15px;
+  }
+}
+.company-history-content__txt::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -15px;
+  display: block;
+  width: 3px;
+  height: 90%;
+  background-color: #ededf0;
+}
+@media (max-width: 980px) {
+  .company-history-content__txt::before {
+    left: 0;
+  }
+}
+.company-history-content__img {
+  max-width: 260px;
+  float: left;
+}
+@media (max-width: 980px) {
+  .company-history-content__img {
+    max-width: inherit;
+    width: 100%;
+  }
+}
+.company-history-content__img:nth-of-type(2) {
+  margin-left: 20px;
+}
+.company-history-content__img-wrap {
+  position: relative;
+  top: -20px;
+  margin-left: 3%;
+}
+@media (max-width: 980px) {
+  .company-history-content__img-wrap {
+    position: inherit;
+    top: 0;
+    margin-left: 0;
+  }
+}
+.company-history .td35 {
+  width: 35%;
+}
+@media (max-width: 980px) {
+  .company-history .td35 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.company-history .td50 {
+  width: 50%;
+}
+@media (max-width: 980px) {
+  .company-history .td50 {
+    width: 100%;
+  }
+}
+.company-history .slider {
+  padding-left: 0;
+  max-width: 260px;
+}
+@media (max-width: 980px) {
+  .company-history .slider {
+    max-width: calc(100vw - 30px);
+  }
+}
+.company-history .slick-dots li {
+  width: 5px !important;
+  height: 5px !important;
+  background: #000;
+  opacity: 0.2;
+}
+.company-history .slick-dots li button:before {
+  content: "" !important;
+  opacity: 0.2 !important;
+}
+.company-history .slick-active {
+  opacity: 1 !important;
+}/*# sourceMappingURL=page-company-history.css.map */

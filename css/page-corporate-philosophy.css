@@ -1,0 +1,258 @@
+.corporate-philosophy {
+  padding-top: 230px;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy {
+    padding-top: 180px;
+  }
+}
+@media (max-width: 475px) {
+  .corporate-philosophy {
+    padding-top: 140px;
+  }
+}
+.corporate-philosophy-content {
+  margin-bottom: 100px;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content {
+    margin-bottom: 50px;
+  }
+}
+.corporate-philosophy-content__item {
+  display: flex;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content__item {
+    display: block;
+  }
+}
+.corporate-philosophy-content__item-left {
+  width: 50%;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content__item-left {
+    width: 100%;
+  }
+}
+.corporate-philosophy-content__item-right {
+  width: 50%;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content__item-right {
+    width: 100%;
+  }
+}
+.corporate-philosophy-content__item-pdr {
+  padding-right: 40px;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content__item-pdr {
+    padding-right: 0;
+  }
+}
+.corporate-philosophy-content__txt {
+  margin-bottom: 50px;
+}
+.corporate-philosophy-content__img {
+  margin: 0 auto;
+}
+.corporate-philosophy-content__img:nth-of-type(2) {
+  margin-left: 20px;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content__img {
+    display: none;
+  }
+}
+.corporate-philosophy-content__img-wrap {
+  position: relative;
+  top: -20px;
+  margin-left: 3%;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content__img-wrap {
+    position: inherit;
+    top: 0;
+    margin-left: 0;
+  }
+}
+.corporate-philosophy-content__imgSp {
+  display: none;
+  width: calc(100% + 30px);
+  max-width: inherit;
+  margin-left: -15px;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content__imgSp {
+    display: block;
+  }
+}
+.corporate-philosophy-content__inner {
+  text-align: center;
+}
+.corporate-philosophy-content__box {
+  display: inline-block;
+  width: 70px;
+  height: 22px;
+  line-height: 22px;
+  margin-top: 70px;
+  margin-bottom: 15px;
+  background-color: #28294F;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.corporate-philosophy-content__box-pdb {
+  margin-bottom: 70px;
+}
+@media (max-width: 475px) {
+  .corporate-philosophy-content__box-pdb {
+    margin-bottom: 15px;
+  }
+}
+.corporate-philosophy-content__message {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+@media (max-width: 475px) {
+  .corporate-philosophy-content__message {
+    font-size: 2rem;
+  }
+}
+.corporate-philosophy-content__message br {
+  display: none;
+}
+@media (max-width: 475px) {
+  .corporate-philosophy-content__message br {
+    display: block;
+  }
+}
+.corporate-philosophy-content__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.corporate-philosophy-content__list-cld {
+  width: 33%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 70px;
+  border-right: 1px solid #ededf0;
+}
+.corporate-philosophy-content__list-cld:nth-of-type(3n) {
+  border-right: none;
+}
+.corporate-philosophy-content__list-cld:nth-of-type(3n+1) {
+  padding-left: 0;
+}
+.corporate-philosophy-content__list-cld:nth-of-type(3n+3) {
+  padding-right: 0;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content__list-cld {
+    width: 50%;
+    padding: 0;
+  }
+  .corporate-philosophy-content__list-cld:nth-of-type(3n) {
+    border-right: 2px solid #ededf0;
+  }
+  .corporate-philosophy-content__list-cld:nth-of-type(2n) {
+    border-right: none;
+  }
+}
+@media (max-width: 475px) {
+  .corporate-philosophy-content__list-cld:nth-of-type(odd) {
+    padding-right: 20px;
+  }
+  .corporate-philosophy-content__list-cld:nth-of-type(even) {
+    padding-left: 20px;
+  }
+}
+.corporate-philosophy-content__list-ttl {
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: 7px;
+}
+@media (max-width: 475px) {
+  .corporate-philosophy-content__list-ttl {
+    font-size: 1.8rem;
+  }
+}
+.corporate-philosophy-content__list-cap {
+  font-size: 1.2rem;
+}
+@media (max-width: 475px) {
+  .corporate-philosophy-content__list-cap {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+}
+.corporate-philosophy-content__list-txt {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 17px;
+}
+@media (max-width: 475px) {
+  .corporate-philosophy-content__list-txt {
+    font-size: 1.2rem;
+  }
+  .corporate-philosophy-content__list-txt br {
+    display: none;
+  }
+}
+.corporate-philosophy-content__links {
+  display: flex;
+  text-align: center;
+}
+.corporate-philosophy-content__links .corporate-philosophy-img {
+  overflow: hidden;
+  display: inline-block;
+}
+.corporate-philosophy-content__links .corporate-philosophy-img img {
+  transition: 1s all;
+}
+.corporate-philosophy-content__links .corporate-philosophy-img:hover img {
+  transform: scale(1.1, 1.1);
+  transition: 1s all;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content__links {
+    display: block;
+  }
+}
+.corporate-philosophy-content__links-left {
+  width: 50%;
+  border-right: 1px solid #ededf0;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content__links-left {
+    width: 100%;
+    margin-bottom: 100px;
+    border-right: none;
+    padding-bottom: 100px;
+    border-bottom: 2px solid #ededf0;
+  }
+}
+.corporate-philosophy-content__links-right {
+  width: 50%;
+}
+@media (max-width: 980px) {
+  .corporate-philosophy-content__links-right {
+    width: 100%;
+  }
+}
+.corporate-philosophy-content__links-txt {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.corporate-philosophy-content__links-txt br {
+  display: none;
+}
+@media (max-width: 475px) {
+  .corporate-philosophy-content__links-txt br {
+    display: block;
+  }
+}/*# sourceMappingURL=page-corporate-philosophy.css.map */

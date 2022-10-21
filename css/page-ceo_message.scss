@@ -1,0 +1,345 @@
+@import '_func';
+
+.ceo-message {
+    padding-top: calc(140px + 90px);
+
+    @include mq('tab') {
+        padding-top: calc(90px + 90px);
+    }
+
+    @include mq('sp') {
+        padding-top: calc(50px + 90px);
+    }
+
+    &-content {
+        margin-bottom: 100px;
+
+        @include mq('tab') {
+            margin-bottom: 75px;
+        }
+
+        @include mq('sp') {
+            margin-bottom: 50px;
+        }
+
+        &__mv {
+            margin-bottom: 132px;
+
+            @include mq('tab') {
+                margin-bottom: 50px;
+            }
+
+            &-img {
+                margin-left: -40px;
+                width: calc(100% + 80px);
+                max-width: inherit;
+                display: block;
+
+                @include mq('tab') {
+                    display: none;
+                }
+            }
+
+            &-imgSp {
+                display: none;
+
+                @include mq('tab') {
+                    display: block;
+                    max-width: inherit;
+                    margin-left: -15px;
+                    width: calc(100% + 30px);
+                }
+            }
+        }
+
+        &__border {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                display: block;
+                background-color: #ededf0;
+
+                @include mq('tab') {
+                    width: 85%;
+                    margin: 0 auto;
+                    left: 11%;
+                }
+
+                @include mq('sp') {
+                    width: 80%;
+                    left: 16%;
+                }
+            }
+
+            &._max {
+                &::after {
+                    @include mq('sp') {
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        &__icon {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -25px;
+                left: -75px;
+                background-image: url(../img/message/message02.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 62px;
+                height: 52px;
+                display: block;
+
+                @include mq('tab') {
+                    left: 0;
+                }
+
+                @include mq('sp') {
+                    width: 40px;
+                    height: 35px;
+                }
+            }
+        }
+
+        &__inner {
+            padding-top: 57px;
+        }
+
+        &__ttl {
+            text-align: left;
+            margin-left: -40px;
+            margin-bottom: 70px;
+
+            br {
+                display: none;
+            }
+
+            @include mq('tab') {
+                margin-left: 0;
+                margin-bottom: 60px;
+            }
+
+            @include mq('sp') {
+                margin-left: 0;
+                margin-bottom: 50px;
+
+                br {
+                    display: block;
+                }
+            }
+        }
+
+        &__txt {
+            text-align: left;
+            margin-bottom: 50px;
+
+            @include mq('tab') {
+                margin-bottom: 45px;
+            }
+
+            @include mq('sp') {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__list {
+            padding-left: 0;
+        }
+
+        &__item {
+            margin-bottom: 92px;
+
+            @include mq('tab') {
+                display: block;
+                margin-bottom: 62px;
+            }
+
+            @include mq('tab') {
+                margin-bottom: 52px;
+            }
+
+            &-ttl {
+                font-size: 2.1rem;
+                margin-bottom: 35px;
+
+                br {
+                    display: none;
+                }
+
+                @include mq('sp') {
+                    position: relative;
+                    margin-bottom: 20px;
+                    font-size: 1.6rem;
+                    letter-spacing: 0;
+                    padding-left: 30px;
+
+                    br {
+                        display: block;
+                    }
+                }
+            }
+
+            &-txt {
+                padding-top: 35px;
+                padding-left: 60px;
+
+                @include mq('sp') {
+                    padding-left: 35px;
+                    padding-top: 20px;
+                }
+            }
+
+            &-bold {
+                font-weight: 600;
+            }
+        }
+
+        &__right {
+            text-align: right;
+        }
+
+        &__padding-left-clear {
+            padding-left: 0;
+        }
+
+        &__num {
+            font-family: minion-pro, serif;
+            font-size: 3.2rem;
+            margin-right: 20px;
+
+            @include mq('tab') {
+                font-size: 2.6rem;
+                margin-right: 5px;
+            }
+
+            @include mq('sp') {
+                position: absolute;
+                top: -7px;
+                left: 0;
+            }
+        }
+
+        &__padd {
+            padding-top: 5px;
+        }
+
+        &__img {
+            margin: 0 auto;
+
+            &:nth-of-type(2) {
+                margin-left: 20px;
+            }
+
+            @include mq('tab') {
+                display: none;
+            }
+
+            &-wrap {
+                position: relative;
+                top: -20px;
+                margin-left: 3%;
+
+                @include mq('tab') {
+                    position: inherit;
+                    top: 0;
+                    margin-left: 0;
+                }
+            }
+
+            &Sp {
+                display: none;
+                width: calc(100% + 30px);
+                max-width: inherit;
+                margin-left: -15px;
+
+                @include mq('tab') {
+                    display: block;
+                }
+            }
+        }
+
+        &__box {
+            display: inline-block;
+            width: 70px;
+            height: 22px;
+            line-height: 22px;
+            margin-top: 70px;
+            margin-bottom: 15px;
+            background-color: $main-color;
+            color: $text-color02;
+            font-size: 1.3rem;
+            font-weight: 600;
+
+            &-pdb {
+                margin-bottom: 70px;
+            }
+        }
+
+        &__message {
+            font-size: 2.8rem;
+            font-weight: 600;
+
+            br {
+                display: none;
+
+                @include mq('sp') {
+                    display: block;
+                }
+            }
+        }
+
+        &__links {
+            display: flex;
+            text-align: center;
+
+            @include mq('tab') {
+                display: block;
+            }
+
+            &-left {
+                width: 50%;
+
+                @include mq('tab') {
+                    width: 100%;
+                    margin-bottom: 100px;
+                }
+            }
+
+            &-right {
+                width: 50%;
+
+                @include mq('tab') {
+                    width: 100%;
+                }
+            }
+
+            &-txt {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    @include mq('sp') {
+        .ceo-message-content__item-txt.ceo-message-content__padding-left-clear {
+            padding-top: 0;
+        }
+
+        .ceo-message-content__item-txt.ceo-message-content__item-bold.ceo-message-content__padding-left-clear.ceo-message-content__right {
+            padding-top: 20px;
+        }
+    }
+}

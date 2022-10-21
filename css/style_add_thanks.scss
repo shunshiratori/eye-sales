@@ -1,0 +1,42 @@
+.content_area {
+  padding-top: 151px;
+}
+
+.heading h2 {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 73px;
+  position: relative;
+  text-align: center;
+}
+
+main a.button.red {
+  height: 55px;
+  width: 225px;
+  margin: auto;
+}
+
+main section a {
+  text-decoration: underline;
+  color: #e60012;
+}
+
+.wrapper {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1175px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: content-box;
+}
+
+footer .wrapper {
+  width: 1175px;
+}
+
+@media (max-width: 767px) {
+  footer .wrapper {
+    width: fit-content;
+  }
+}

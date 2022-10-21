@@ -1,0 +1,249 @@
+@import '_func';
+
+.cmn-eyecatch {
+  padding-top: 135px;
+
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    h2 {
+      font-size: 2.5rem;
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+
+    p {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.bg-grey {
+  background: #EDEDF0;
+}
+
+@media (min-width: 476px) {
+  section.cmn-eyecatch {
+    padding-top: 230px;
+  }
+
+  .wrapper-thanks {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    strong {
+      line-height: 3;
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  section.cmn-eyecatch {
+    padding-top: 140px;
+  }
+
+  .cmn-eyecatch__ttl {
+    font-size: 3.2rem;
+  }
+
+  .wrapper-thanks h2 {
+    padding-top: 6rem;
+  }
+
+  .wrapper-thanks strong+strong {
+    margin-top: 1em;
+  }
+
+  .wrapper-thanks strong {
+    display: block;
+  }
+
+  .wrapper-contact-info {
+    padding: 20px;
+  }
+
+  .wrapper-contact-info-div table td,
+  .wrapper-contact-info-div td:first-child {
+    display: block;
+    width: 100%;
+  }
+
+  .wrapper-contact-info-div td {
+    padding: 2rem 0;
+  }
+
+  .wrapper-contact-info-div tr td:first-child {
+    padding-bottom: 1.25rem;
+  }
+
+  .wrapper-contact-info-div tr td:first-child[colspan="2"] {
+    padding-bottom: 2rem;
+  }
+
+  .wrapper-contact-info-div tr td+td {
+    padding-top: 0;
+  }
+}
+
+// documents_all_wrap
+.documents_all_wrap {
+  margin-bottom: 130px;
+
+  @include mq('sp') {
+    margin-bottom: 50px;
+  }
+
+  .cmn-button {
+    @include mq('sp') {
+      display: table;
+      margin: 0 auto;
+    }
+  }
+
+  .wrapper {
+    h3 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .cmn-button__link-m {
+      width: 300px;
+    }
+  }
+}
+
+.category_link_wrap {
+  padding: 50px;
+
+  @include mq('sp') {
+    padding: 50px 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    @include mq('sp') {
+      padding-left: 0;
+      gap: 30px;
+    }
+
+    li {
+      a {
+        font-weight: bold;
+        background-image: linear-gradient(#28294F, #28294F);
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 0 1px;
+        display: inline;
+        transition: background-size 0.5s cubic-bezier(0.43, 0.05, 0.17, 1) 0s;
+
+        &:hover {
+          background-position: 0 100%;
+          background-size: 100% 1px;
+        }
+      }
+    }
+  }
+}
+
+.ct-section {
+  margin-top: 100px;
+
+  h1 {
+    position: relative;
+    font-size: 2.8rem;
+    font-weight: 600;
+    padding-left: 23px;
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 50px;
+      background-color: #000;
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-left: 50px;
+  }
+
+  .article_list_wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    gap: 50px;
+
+    @include mq('sp') {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 0;
+    }
+
+    .article_post_wrap {
+      padding-bottom: 100px;
+      position: relative;
+      border-bottom: 1px solid #ededf0;
+
+      &:hover::after {
+        transform: scale(1);
+        transform-origin: left top;
+      }
+
+      &::after {
+        background-color: #28294F;
+        bottom: -1px;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: right top;
+        transition: transform 0.4s cubic-bezier(0.43, 0.05, 0.17, 1);
+        width: 100%;
+      }
+
+      .image_box {
+        img {
+          height: 100%;
+        }
+      }
+
+      .inner {
+        margin-top: 20px;
+        padding-bottom: 30px;
+        padding: 15px 0px 20px;
+
+        h2 {
+          font-size: 16px;
+          line-height: 1.6;
+          margin-bottom: 10px;
+        }
+
+        .cmn-button {
+          margin: 0 auto;
+          display: table;
+          position: absolute;
+          bottom: 30px;
+          right: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.category-06 {
+  margin-bottom: 11.7rem;
+}

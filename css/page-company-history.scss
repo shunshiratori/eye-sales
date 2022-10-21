@@ -1,0 +1,166 @@
+@import '_func';
+
+.company-history {
+    padding-top: calc(140px + 90px);
+
+    @include mq('tab') {
+        padding-top: calc(90px + 90px);
+    }
+
+    @include mq('sp') {
+        padding-top: calc(50px + 90px);
+    }
+
+    &-content {
+        margin-top: calc(110px - 45px);
+        margin-bottom: 120px;
+
+        @include mq('tab') {
+            margin-top: 80px;
+        }
+
+        @include mq('sp') {
+            margin-top: 30px;
+        }
+
+        &__table {
+            width: 100%;
+            border-top: 1px solid #ededf0;
+        }
+
+        &__tbody {
+            width: 100%;
+        }
+
+        &__th {
+            width: 15%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            // font-weight: 900;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid #ededf0;
+
+            @include mq('tab') {
+                display: inline-block;
+                width: 100%;
+                font-size: 1.8rem;
+            }
+        }
+
+        &__td {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ededf0;
+            vertical-align: top;
+
+            @include mq('tab') {
+                display: inline-block;
+            }
+
+            &-inner {
+                display: flex;
+            }
+        }
+
+        &__link {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        &__txt {
+            position: relative;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            display: block;
+
+            @include mq('tab') {
+                padding-left: 15px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: -15px;
+                display: block;
+                width: 3px;
+                height: 90%;
+                background-color: #ededf0;
+
+                @include mq('tab') {
+                    left: 0;
+                }
+            }
+        }
+
+        &__img {
+            max-width: 260px;
+            float: left;
+
+            @include mq('tab') {
+                max-width: inherit;
+                width: 100%;
+            }
+
+            &:nth-of-type(2) {
+                margin-left: 20px;
+            }
+
+            &-wrap {
+                position: relative;
+                top: -20px;
+                margin-left: 3%;
+
+                @include mq('tab') {
+                    position: inherit;
+                    top: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .td35 {
+        width: 35%;
+
+        @include mq('tab') {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .td50 {
+        width: 50%;
+
+        @include mq('tab') {
+            width: 100%;
+        }
+    }
+
+    .slider {
+        padding-left: 0;
+        max-width: 260px;
+
+        @include mq('tab') {
+            max-width: calc(100vw - 30px);
+        }
+    }
+
+    .slick-dots li {
+        width: 5px !important;
+        height: 5px !important;
+        background: #000;
+        opacity: .2;
+    }
+
+    .slick-dots li button:before {
+        content: "" !important;
+        opacity: 0.2 !important;
+    }
+
+    .slick-active {
+        opacity: 1 !important;
+    }
+}

@@ -1,0 +1,197 @@
+@import '_func';
+
+.corporate {
+    padding-top: calc(140px + 90px);
+
+    @include mq('tab') {
+        padding-top: calc(90px + 90px);
+    }
+
+    @include mq('sp') {
+        padding-top: calc(50px + 90px);
+    }
+
+    &-eyecatch {
+        &__ttl {
+            font-size: 6.0rem;
+            margin-bottom: 40px;
+            color: $main-color;
+            letter-spacing: 4px;
+            // letter-spacing: 8px;
+
+            @include mq('tab') {
+                font-size: 4.8rem;
+            }
+
+            @include mq('sp') {
+                font-size: 3.2rem;
+            }
+        }
+
+        &__txt {
+            font-size: 1.8rem;
+            font-weight: 500;
+
+            @include mq('tab') {
+                font-size: 1.6rem;
+            }
+
+            @include mq('sp') {
+                font-size: 1.4rem;
+            }
+
+            br {
+                display: none;
+
+                @include mq('sp') {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &-grid {
+        margin-top: calc(110px - 45px);
+        margin-bottom: 120px;
+
+        @include mq('tab') {
+            margin-top: calc(115px - 45px);
+        }
+
+        @include mq('sp') {
+            margin-top: calc(120px - 45px);
+        }
+
+        &__inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            @include mq('tab') {
+                justify-content: space-evenly;
+            }
+
+            @include mq('sp') {
+                display: block;
+            }
+        }
+
+        &__item {
+            width: 30%;
+            max-width: 365px;
+            margin-top: 45px;
+            margin-left: 2%;
+            margin-right: 2%;
+            border-bottom: 1px solid #ededf0;
+
+            &:nth-of-type(3n+1) {
+                margin-left: 0;
+            }
+
+            &:nth-of-type(3n+3) {
+                margin-right: 0;
+            }
+
+            @include mq('tab') {
+                width: 48%;
+
+                &:nth-of-type(3n+1) {
+                    margin-left: 2%;
+                }
+
+                &:nth-of-type(3n+3) {
+                    margin-right: 2%;
+                }
+
+                &:nth-of-type(2n+1) {
+                    margin-left: 0;
+                }
+
+                &:nth-of-type(2n+2) {
+                    margin-left: 0;
+                }
+            }
+
+            @include mq('sp') {
+                max-width: inherit;
+                margin-top: 15px;
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+                border: none;
+            }
+        }
+
+        &__link {
+            position: relative;
+            display: inline-block;
+            transition: 1s all;
+
+            &::after {
+                background-color: $main-color;
+                bottom: -1px;
+                content: "";
+                display: inline-block;
+                height: 1px;
+                left: 0;
+                position: absolute;
+                transform: scaleX(0);
+                transform-origin: right top;
+                transition: transform .4s cubic-bezier(.43, .05, .17, 1);
+                width: 100%;
+            }
+
+            &:hover {
+                &::after {
+                    transform: scale(1);
+                    transform-origin: left top;
+                }
+            }
+
+            @include mq('sp') {
+                // margin-top: calc(120px - 45px);
+                margin-top: 15px;
+                display: flex;
+                width: 100%;
+            }
+        }
+
+        &__content {
+            @include mq('sp') {
+                // width: 50%;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+
+        &__ttl {
+            font-size: 2.4rem;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 25px;
+
+            // text-align: right;
+            @include mq('sp') {
+                font-size: 2.0rem;
+                margin-top: 0%;
+                margin-left: 25px;
+                // margin-left: 16%;
+                margin-bottom: 5px;
+            }
+        }
+
+        &__txt {
+            color: $main-color;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: right;
+            padding-bottom: 15px;
+
+            @include mq('sp') {
+                font-size: 1.2rem;
+                margin-left: 25px;
+                text-align: left;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@import '_func';
+
+.trading-performance {
+    padding-top: calc(140px + 90px);
+
+    @include mq('tab') {
+        padding-top: calc(90px + 90px);
+    }
+
+    @include mq('sp') {
+        padding-top: calc(50px + 90px);
+    }
+
+    &-content {
+        margin-top: calc(110px - 45px);
+        margin-bottom: 120px;
+
+        @include mq('tab') {
+            margin-top: calc(115px - 45px);
+        }
+
+        @include mq('sp') {
+            margin-top: 0;
+            // margin-top: calc(120px - 45px);
+        }
+
+        &__table {
+            width: 100%;
+            border-top: 1px solid #ededf0;
+        }
+
+        &__tbody {
+            width: 100%;
+        }
+
+        &__th {
+            width: 30%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid #ededf0;
+
+            @include mq('sp') {
+                width: 33%;
+                font-size: 1.2rem;
+                letter-spacing: 0;
+            }
+        }
+
+        &__td {
+            width: 70%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ededf0;
+
+            @include mq('sp') {
+                width: 67%;
+            }
+
+            &-inner {
+                display: flex;
+
+                @include mq('tab') {
+                    display: block;
+                }
+            }
+        }
+
+        &__txt {
+            margin-bottom: 10px;
+
+            @include mq('sp') {
+                font-size: 1.0rem;
+                margin-bottom: 5px;
+                letter-spacing: 0;
+            }
+
+            &-s {
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin-top: 30px;
+
+                @include mq('sp') {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        &__img {
+            float: left;
+
+            &:nth-of-type(2) {
+                margin-left: 20px;
+            }
+
+            &-wrap {
+                position: relative;
+                top: -20px;
+                margin-left: 3%;
+
+                @include mq('tab') {
+                    position: inherit;
+                    top: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

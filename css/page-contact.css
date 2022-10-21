@@ -1,0 +1,205 @@
+/* 問い合わせページ用 */
+section.cmn-eyecatch {
+	padding-top: 135px;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.wrapper h2 {
+	font-size: 2.5rem;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.wrapper p {
+	padding-bottom: 50px;
+}
+
+.forms {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	background-color: #f9f9f9;
+}
+
+main .markerobo-form-wrapper {
+	max-width: 780px;
+}
+
+button.btn.btn-default.cmn-button__link.cmn-button__link-white.cmn-button__link-m.cmn-button__slide.cmn-button__slide-white.markerobo-form-button.btn.btn-default {
+	background-color: #28294F;
+	border-color: #28294F;
+	color: #ffffff;
+	font-size: 1.6rem;
+	font-weight: 400;
+	border-radius: 0;
+	transition: .4s;	
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom:6rem;
+	margin-top:4rem;
+}
+button.btn.btn-default.cmn-button__link.cmn-button__link-white.cmn-button__link-m.cmn-button__slide.cmn-button__slide-white.markerobo-form-button.btn.btn-default:hover {
+	background-color: transparent;
+	color: #28294F;
+}
+button.btn.btn-default.cmn-button__link.cmn-button__link-white.cmn-button__link-m.cmn-button__slide.cmn-button__slide-white.markerobo-form-button.btn.btn-default::before {
+	background-color: transparent;
+}
+
+/* 問い合わせサンクスページ用 */
+.wrapper-thanks {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.wrapper-thanks h2 {
+/* 	font-size: 2.5rem; */
+	padding-top: 9.5rem;
+	padding-bottom: 6.5rem;
+	/* 	padding-top: 30px;
+	padding-bottom: 50px; */
+}
+
+.wrapper-thanks p {
+	padding-bottom: 50px;
+}
+
+.wrapper-thanks p img {
+	display: inline;
+}
+
+.wrapper-contact-info {
+	max-width: 100%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #f9f9f9;
+}
+
+.wrapper-contact-info h2 {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.wrapper-contact-info p {
+	padding-bottom: 50px;
+}
+
+.wrapper-contact-info-div {
+	background-color: #ffffff;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* main .wrapper-contact-info-div table {
+width: auto;
+white-space: nowrap;
+margin-left: auto;
+margin-right: auto;
+} */
+
+.wrapper-contact-info-div tr {
+	border-top: #ededf0 1px solid;
+}
+
+.wrapper-contact-info-div tr:first-child {
+	border-top: none;
+}
+
+.wrapper-contact-info-div td{
+	padding: 3rem 0;
+	/* 	padding: 2.7rem 0;
+	line-height: 1.8; */
+}
+
+td:first-child {
+	width: 30%;
+}
+
+
+.wrapper a, .wrapper-contact-info-div a {
+	color: #0066cc;
+	background-image: linear-gradient(#0066cc, #0066cc);
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 0 1px;
+	display: inline;
+	transition: background-size 0.5s cubic-bezier(0.43, 0.05, 0.17, 1) 0s;
+}
+
+.wrapper a:hover,.wrapper-contact-info-div a:hover {
+	background-position: 0 100%;
+	background-size: 100% 1px;
+}
+
+@media (min-width: 476px){
+	section.cmn-eyecatch {
+		padding-top: 230px;
+	}
+	.wrapper-thanks h2 {
+		font-size: 2.5rem;
+	}
+	.wrapper-thanks strong  {
+		line-height: 3;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 476px){
+	.container-l {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media (max-width: 475px){
+	section.cmn-eyecatch {
+		padding-top: 140px;
+	}
+	.cmn-eyecatch__ttl {
+		font-size: 3.2rem;
+	}
+	.cmn-eyecatch__inner {
+		/* 	margin-bottom: 50px; */
+	}
+	.wrapper-thanks h2{
+		padding-top: 6rem;
+	}
+	.wrapper-thanks strong+strong {
+		margin-top: 1em;
+	}
+
+	.wrapper-thanks strong {
+		display: block;
+	}
+	.wrapper-contact-info {
+		padding: 20px;
+	}
+	.wrapper-contact-info-div table td, .wrapper-contact-info-div td:first-child {
+		display: block;
+		width: 100%;
+	}
+	.wrapper-contact-info-div td {
+		padding: 2rem 0;
+	}
+	.wrapper-contact-info-div tr td:first-child {
+		padding-bottom: 1.25rem;
+	}
+	.wrapper-contact-info-div tr td:first-child[colspan="2"] {
+		padding-bottom: 2rem;
+	}
+	.wrapper-contact-info-div tr td+td {
+		padding-top: 0;
+	}
+}
